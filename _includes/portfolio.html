@@ -1,0 +1,245 @@
+<section class="no-padding" id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Scavenger Hunt Items and Maps</h2>
+                <hr class="primary">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row no-gutter no-padding">
+            <div class="col-lg-4 col-sm-6" style="width:455;  height:337;">
+                <a href="javascript:lincoln()" class="portfolio-box" >
+                    <img src="img/portfolio/lincoln_2.png" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Stop 1
+                            </div>
+                            <div class="project-name">
+                                Lincoln Memorial
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6" style="width:455;  height:337;">
+                <a href="javascript:Vietnam()" class="portfolio-box" download>
+                    <img src="img/portfolio/Vietnam_2.png" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Stop 2
+                            </div>
+                            <div class="project-name">
+                                Vietnam War Memorial
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6" style="width:455;  height:337;">
+                <a href="javascript:Women()" class="portfolio-box">
+                    <img src="img/portfolio/women.png" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Stop 2.5
+                            </div>
+                            <div class="project-name">
+                                Women's Vietnam Memorial
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row no-gutter no-padding">
+            <div class="col-lg-4 col-sm-6" style="width:455;  height:337;">
+                <a href="javascript:Korea()" class="portfolio-box">
+                    <img src="img/portfolio/korea_2.jpg" class="img-responsive" alt="" >
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Stop 3
+                            </div>
+                            <div class="project-name">
+                                Korean War Memorial
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6" style="width:455;  height:337;">
+                <a href="files/Maps.pdf" class="portfolio-box">
+                    <img src="img/portfolio/maps_2.jpg" class="img-responsive" alt="">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Category
+                            </div>
+                            <div class="project-name">
+                                Maps
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6" style="width:455;  height:337;">
+                <a href="files/Zello.pdf" class="portfolio-box">
+                    <img src="img/portfolio/walkie_2.png" class="img-responsive" alt="" >
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Category
+                            </div>
+                            <div class="project-name">
+                                Zello Tutorial
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</section>
+
+
+<script>
+    function lincoln(){
+        document.getElementById("header").innerHTML= "Lincoln Memorial Items";
+        const section = document.getElementById("header");
+        // if (section) {
+        //     section.scrollIntoView({behavior:'smooth', block: 'start', inline: 'nearest', alignToTop: true})
+        // }
+        
+        if (section) {
+            const bodyRect = document.body.getBoundingClientRect();
+            const sectionRect = section.getBoundingClientRect();
+            const offset = sectionRect.top - bodyRect.top;
+
+            // You can adjust the offset to account for any fixed headers or other elements if needed
+            const offsetWithPadding = offset - 20;
+
+            document.documentElement.scrollTop = offsetWithPadding;
+        }
+
+
+        // document.getElementById("header").innerHTML= "Lincoln Memorial Items";
+        document.getElementById("description1_heading").innerHTML= "Martin Luther King's I Have A Dream Location";
+        document.getElementById("description1_p").innerHTML= "The spot where MLK gave his speech is one of the three things tonight’s Scavenger Hunt will suggest you look out for at the Lincoln Memorial.";
+
+        document.getElementById("description2_heading").innerHTML= "Emancipation";
+        document.getElementById("description2_p").innerHTML= "On the left wall as you face Lincoln, look for the mural depicting Emancipation. The 101 year-old mural is pretty faded, but look carefully and you’ll see the Angel of Truth offering freedom to a slave in shackles.";
+
+        document.getElementById("description3_heading").innerHTML= "Lincoln's Famous Conclusion";
+        document.getElementById("description3_p").innerHTML= "Lincoln's famous conclusion, \"With malice toward none, with charity for all,\" marked his inclusive plan to unite the nation as the Confederacy neared surrender after four years of war. In a brief six-minute speech, he skillfully avoided dividing the North and South, emphasizing reconciliation.";
+
+
+        document.getElementById("picture1").setAttribute("src", "img/aside/3a.jpg")
+        document.getElementById("picture2").setAttribute("src", "img/aside/3b.jpg")
+        document.getElementById("picture3").setAttribute("src", "img/aside/3c.jpg")
+
+    }
+
+    function Vietnam(){
+        const section = document.getElementById("header");
+        document.getElementById("header").innerHTML= "Vietnam Memorial Items";
+        // if (section) {
+        //     section.scrollIntoView({behavior:'smooth'})
+        // }
+
+        if (section) {
+            const bodyRect = document.body.getBoundingClientRect();
+            const sectionRect = section.getBoundingClientRect();
+            const offset = sectionRect.top - bodyRect.top;
+
+            // You can adjust the offset to account for any fixed headers or other elements if needed
+            const offsetWithPadding = offset - 20;
+
+            document.documentElement.scrollTop = offsetWithPadding;
+        }
+        document.getElementById("header").innerHTML= "Vietnam Memorial Items";
+        document.getElementById("description1_heading").innerHTML= "Diamond and Cross Symbol";
+        document.getElementById("description1_p").innerHTML= "A diamond indicates a soldier killed in action, while a cross represents a soldier missing in action or a prisoner of war. The Wall displays approximately 1,300 names with crosses, signifying MIAs, and there are no circles around the crosses as no missing soldiers have been found alive so far.";
+
+        document.getElementById("description2_heading").innerHTML= "Cross Turned to Diamond";
+        document.getElementById("description2_p").innerHTML= "If a missing soldier is found to be dead, the cross becomes a diamond. If the missing soldier eventually returns home alive, a circle is inscribed around the cross. To date, no MIAS have been found alive, so you won’t see circles around any crosses on the Wall.";
+
+        document.getElementById("description3_heading").innerHTML= "Memorabilia";
+        document.getElementById("description3_p").innerHTML= "explore the Vietnam Memorial and seek out the heartfelt memorial items left by visitors, such as American flags or beautifully crafted wreaths. These symbols of honor and remembrance represent the gratitude and respect for the courageous soldiers who served. ";
+
+
+        document.getElementById("picture1").setAttribute("src", "img/aside/4a.jpg")
+        document.getElementById("picture2").setAttribute("src", "img/aside/4b.jpg")
+        document.getElementById("picture3").setAttribute("src", "img/aside/4c.jpg")
+
+    }
+
+    function Korea(){
+        document.getElementById("header").innerHTML= "Vietnam Memorial Items";
+        const section = document.getElementById("header");
+        // if (section) {
+        //     section.scrollIntoView({behavior:'smooth'})
+        // }
+        if (section) {
+            const bodyRect = document.body.getBoundingClientRect();
+            const sectionRect = section.getBoundingClientRect();
+            const offset = sectionRect.top - bodyRect.top;
+
+            // You can adjust the offset to account for any fixed headers or other elements if needed
+            const offsetWithPadding = offset - 20;
+
+            document.documentElement.scrollTop = offsetWithPadding;
+        }
+
+        document.getElementById("header").innerHTML= "Korean Memorial Items";
+        document.getElementById("description1_heading").innerHTML= "The Reflections on the Wall";
+        document.getElementById("description1_p").innerHTML= "The statues at the Korean Memorial poignantly reflect the spirit of sacrifice and camaraderie among the soldiers who fought during the Korean War. These lifelike statues serve as a powerful tribute to the brave men and women who defended freedom and exemplify the shared values that endure across nations.";
+
+        document.getElementById("description2_heading").innerHTML= "Military Rank";
+        document.getElementById("description2_p").innerHTML= "The arrangement of names on the Wall highlights the unequal distribution of the war's burden among the military. The Scavenger Hunt invites you to search for the military branch and rank that experienced disproportionate casualties during the Korean War.";
+
+        document.getElementById("description3_heading").innerHTML= "Walkie-Talkie";
+        document.getElementById("description3_p").innerHTML= "One of the striking items to search for is the remarkably large walkie-talkie sets that some servicemen are carrying, which could almost be seen as comically oversized. This serves as a poignant reminder of how rapidly technology has transformed the methods of warfare and the tools used in modern conflicts.";
+
+
+        document.getElementById("picture1").setAttribute("src", "img/aside/6a.jpg")
+        document.getElementById("picture2").setAttribute("src", "img/aside/6b.jpg")
+        document.getElementById("picture3").setAttribute("src", "img/aside/6c.jpg")
+
+    }
+
+    function Women(){
+        const section = document.getElementById("aside");
+        if (section) {
+            section.scrollIntoView({behavior:'smooth'})
+        }
+        document.getElementById("header").innerHTML= "Vietnam Women's Memorial";
+        document.getElementById("description1_heading").innerHTML= "";
+        document.getElementById("description1_p").innerHTML= "";
+       
+        document.getElementById("description2_heading").innerHTML= "Statue";
+        document.getElementById("description2_p").innerHTML= "After observing the Wall, your group leader will guide you to the Vietnam Women's Memorial, located not far from the Washington Monument end of the Wall, for the next part of the Scavenger Hunt. The bronze sculpture portrays three field-hospital nurses in military attire, one of whom cradles a wounded soldier while another appears to be searching the sky for an approaching helicopter. Surrounding the memorial are eight yellowwood trees, paying tribute to the eight nurses who lost their lives in Vietnam. Created by the talented female artist, Glenna Goodacre, this memorial stands as a testament to their courage and sacrifice. Finally, the Korean War Veterans Memorial will be the last stop of the evening.";
+
+        document.getElementById("description3_heading").innerHTML= "";
+        document.getElementById("description3_p").innerHTML= "";
+
+    
+        document.getElementById("picture1").setAttribute("src", "")
+        
+        
+        document.getElementById("picture2").setAttribute("src", "img/aside/5.jpg");
+        
+        document.getElementById("picture3").setAttribute("src", "")
+      
+        const styleElement = document.createElement("style");
+        styleElement.textContent = 'img[src=""] { display: none; }';
+        document.head.appendChild(styleElement);
+
+    }
+</script>
